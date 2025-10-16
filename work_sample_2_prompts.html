@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function-Specific AI Prompt Library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .document {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #1e293b;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        
+        .header .subtitle {
+            color: #64748b;
+            font-size: 14px;
+        }
+        
+        .intro {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+        
+        .intro p {
+            color: #1e3a8a;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .function-section {
+            margin-bottom: 30px;
+        }
+        
+        .function-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .function-header.legal {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+        
+        .function-header.finance {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        
+        .prompt-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .prompt-title {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .prompt-title .icon {
+            margin-right: 8px;
+        }
+        
+        .prompt-use-case {
+            color: #64748b;
+            font-size: 13px;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        
+        .prompt-text {
+            background: white;
+            border: 2px dashed #cbd5e1;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #334155;
+            line-height: 1.6;
+        }
+        
+        .tip-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 12px 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        
+        .tip-box strong {
+            color: #92400e;
+            font-size: 13px;
+        }
+        
+        .tip-box p {
+            color: #78350f;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        
+        .watermark {
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 12px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="header">
+            <h1>AI Prompt Library: Legal & Finance Functions</h1>
+            <div class="subtitle">Sample Deliverable | Tailored for Business Operations</div>
+        </div>
+        
+        <div class="intro">
+            <p><strong>Purpose:</strong> This library provides function-specific AI prompts designed to reduce manual work, improve accuracy, and accelerate decision-making in Legal and Finance workflows. Each prompt is tested, refined, and optimized for business outcomes.</p>
+        </div>
+        
+        <!-- LEGAL SECTION -->
+        <div class="function-section">
+            <div class="function-header legal">⚖️ Legal & Compliance Prompts</div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">📄</span>
+                    Contract Review Summary
+                </div>
+                <div class="prompt-use-case">Use Case: Initial contract analysis for key terms, risks, and obligations</div>
+                <div class="prompt-text">
+"Review this [contract type] and provide a structured summary including:
+1. Key parties and their obligations
+2. Critical dates and deadlines
+3. Financial terms and payment conditions
+4. Termination clauses and notice requirements
+5. Potential risk areas requiring legal review
+6. Non-standard or unusual provisions
+
+Format as a table for easy scanning."
+                </div>
+                <div class="tip-box">
+                    <strong>💡 Pro Tip:</strong>
+                    <p>Follow up with: "What questions should I ask the other party about [specific clause]?" for negotiation prep.</p>
+                </div>
+            </div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">🔍</span>
+                    Regulatory Compliance Check
+                </div>
+                <div class="prompt-use-case">Use Case: Assess compliance requirements for new business initiatives</div>
+                <div class="prompt-text">
+"I'm planning to [describe initiative]. What are the key regulatory compliance considerations for:
+- Data privacy (GDPR, CCPA, etc.)
+- Financial regulations (SOX, SEC if applicable)
+- Industry-specific requirements
+- Documentation and audit trail needs
+- Risk mitigation strategies
+
+Provide a checklist format prioritized by urgency."
+                </div>
+            </div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">✍️</span>
+                    Policy Language Simplification
+                </div>
+                <div class="prompt-use-case">Use Case: Make complex legal language accessible to employees</div>
+                <div class="prompt-text">
+"Rewrite this policy section in plain language that:
+- Uses 8th grade reading level
+- Maintains legal accuracy
+- Includes practical examples
+- Answers 'What does this mean for me?'
+- Highlights key actions employees must take
+
+[Paste policy section here]"
+                </div>
+            </div>
+        </div>
+        
+        <!-- FINANCE SECTION -->
+        <div class="function-section">
+            <div class="function-header finance">💰 Finance & Operations Prompts</div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">📊</span>
+                    Budget Variance Analysis
+                </div>
+                <div class="prompt-use-case">Use Case: Quickly analyze budget deviations and recommend actions</div>
+                <div class="prompt-text">
+"Analyze this budget variance data and provide:
+1. Top 3 areas of concern (highest % variance)
+2. Potential root causes for each variance
+3. Questions to ask department leads
+4. Recommended corrective actions
+5. Forecast impact if trends continue
+
+[Paste budget data: Dept | Budgeted | Actual | Variance %]"
+                </div>
+                <div class="tip-box">
+                    <strong>💡 Pro Tip:</strong>
+                    <p>Add: "Draft an email to [Department Head] about the [expense category] variance" for ready-to-send communication.</p>
+                </div>
+            </div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">📈</span>
+                    Financial Scenario Modeling
+                </div>
+                <div class="prompt-use-case">Use Case: Model financial impact of business decisions</div>
+                <div class="prompt-text">
+"Model the financial impact of [decision/initiative] over [timeframe]:
+
+Current State:
+- Revenue: $X
+- Costs: $Y
+- Key assumptions: [list]
+
+Proposed Change: [describe]
+
+Provide:
+- Best case, worst case, likely case scenarios
+- Break-even analysis
+- ROI timeline
+- Key risk factors
+- Sensitivity analysis (what variables have biggest impact)"
+                </div>
+            </div>
+            
+            <div class="prompt-card">
+                <div class="prompt-title">
+                    <span class="icon">🎯</span>
+                    Month-End Close Checklist
+                </div>
+                <div class="prompt-use-case">Use Case: Ensure comprehensive month-end procedures</div>
+                <div class="prompt-text">
+"Create a month-end close checklist for [department/company size] including:
+- Pre-close activities (T-3 days)
+- Day-of-close critical tasks
+- Post-close reconciliation steps
+- Common errors to watch for
+- Sign-off requirements
+- Timeline with responsible parties
+
+Organize by priority and dependencies."
+                </div>
+            </div>
+        </div>
+        
+        <div class="intro" style="background: #f0fdf4; border-color: #10b981;">
+            <p><strong>📚 Library Usage Guidelines:</strong> Start with these base prompts, then customize with your specific data, context, and requirements. The most effective prompts include: (1) clear objective, (2) specific context, (3) desired format, and (4) success criteria. Iterate and refine based on output quality.</p>
+        </div>
+        
+        <div class="watermark">
+            WORK SAMPLE - Jeanette Desruisseaux | AI Transformation Consultant<br>
+            Sample prompts for portfolio demonstration purposes
+        </div>
+    </div>
+</body>
+</html>
